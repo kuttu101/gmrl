@@ -1,0 +1,86 @@
+.ab{
+    text-decoration: none;
+}
+.abc{
+    text-decoration: none;
+}
+
+
+.one{
+    text-align: center;
+    }
+    .two{
+        margin-top: 25px;
+    }
+    footer{
+        background-color: rgb(195, 201, 209);
+        /* padding: 30px; */
+    }
+    .three{
+        padding: 20px;
+        background-color: darkgray;
+    }
+    .four{
+        padding: 70px;
+        background-color: lightseagreen;
+    }
+    .book{
+        background-color: grey;
+        border-radius: 25px;
+    }
+    .book:hover{
+        background-color: blue;
+    }
+    .box{
+        background-color: #7AA641;
+    }
+    .home4{
+        padding: 40px;
+        background-color: #666666;
+    }
+    .about us{
+    text-align: center;
+    }
+    .navbar-brand{
+        padding-left: 5%;
+    }
+    .navs{
+        padding-left: 30%;
+    }
+    .Health{
+        background-color: lightskyblue;
+        }
+        .demo>[class*='col-']{
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+
+        .Submit{
+            background-color: blue;
+            color: white;
+            /* padding: 10px; */
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .Submit:hover{
+            background-color: rgb(95, 139, 29);
+            color: white;
+        }
+        .personalized{
+            font-size: 20px;
+            font-weight: 300;
+            text-align: center;
+        }
+        .appointment{
+            text-align: center;
+            padding-left: 20%;
+        }
+        .centersub{
+            padding-left:20%;
+            text-align: center;
+        }
+        
+        
