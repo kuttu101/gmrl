@@ -1,0 +1,72 @@
+:root {
+    --background: url(https://svgur.com/i/11h_.svg);
+  }
+  
+  .box {
+    background: rgba(107, 103, 89, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(107, 103, 89, 0.25);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vh;
+    height: 50vh;
+    border-radius: 15px;
+  }
+  
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    background-image: var(--background);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  input,
+  h3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 7vh;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    align: center;
+    font-family: "Lexend", sans-serif;
+    transition: 200ms ease-in-out;
+  }
+  
+  
+  
+  
+  label {
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: 0.85em;
+    font-family: "Lexend", sans-serif;
+    outline: none;
+  }
+  
+  input:focus {
+    transform: scale(1.05) translateY(-2px);
+    outline: none;
+  }
+  
+  #submitBtn {
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+  }
+  
+  #submitBtn:hover {
+    transform: scale(1.05) translateY(-2px);
+  }

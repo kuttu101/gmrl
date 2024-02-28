@@ -1,0 +1,129 @@
+<!-- {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {% static '/css/signup.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    {% block body_content %}
+        <div class="form-container">
+            
+              <h1>Sign Up</h1>
+            <form action="" method="post">
+              {% csrf_token %}
+              <label for="name">Username</label>
+              <input type="text" id="username"  placeholder="Abbas Uddin" required  name="Name">
+              <label for="email">Email</label>
+              <input type="email" id="email"  placeholder="abbax.uddin@gmail.com" required  name="Email">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Enter your password" required name="Password">
+              <input type="password" id="password" placeholder="confirm your password" required name="ConfirmPassword">             
+              <input type="checkbox" class="term" id="terms" name="terms" >
+              <label for="terms">I agree to the Terms and Conditions</label>
+              <input type="submit" value="signup">
+            </form>
+              <a target="_blank" href="https://codepen.io/CodeAbbas/pen/XWOmbbw">Already have an account? <span>Sign in</span></a>
+            
+            </div>
+          <div class="image-container">
+      
+             <img src="https://cdn-lite.ip2location.com/img/sign-up.png">
+            
+          </div>
+        </div>
+        {% endblock %} 
+<script>
+    const script = document.createElement("script");
+script.src = "https://kit.fontawesome.com/1ee8f271b9.js";
+document.body.appendChild(script);
+
+function togglePassword() {
+  var passwordInput = document.getElementById("password");
+  var eyeIcon = document.getElementById("eye-icon");
+  
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    eyeIcon.classList.add("fa-eye-slash");
+  } else {
+    passwordInput.type = "password";
+    eyeIcon.classList.remove("fa-eye-slash");
+  }
+}
+</script>
+      
+</body>
+</html> -->
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=" {% static '/css/signup.css' %}">
+  <title>Document</title>
+</head>
+<body>
+  {% block body %}
+  <main>
+    <section class="form-section">
+      <div class="form-wrapper">
+        <h1 class="title">Sign up</h1>
+        <form action="" method="post">
+          {% csrf_token %}
+          <div class="form-row">
+            <div class="form-group">
+              <label>
+                <span class="sr-only">First Name</span>
+                <input type="text" placeholder="First Name" class="form-input" required name="Name">
+              </label>
+            </div>
+            <!-- <div class="form-group">
+              <label>
+                <span class="sr-only">Last Name</span>
+                <input id="last-name" type="text" placeholder="Last Name" class="form-input" required>
+              </label>
+            </div>  -->
+          </div>
+          <div class="form-group">
+            <label>
+              <span class="sr-only">Email address</span>
+              <input type="email" placeholder="Email" class="form-input" required name="Email">
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+              <span class="sr-only">Password</span>
+              <input type="password" placeholder="Password" class="form-input" required name="Password">
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+              <span class="sr-only">ConfirmPassword</span>
+              <input type="password" placeholder="ConfirmPassword" class="form-input" required name="ConfirmPassword">
+            </label>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Submit" class="form-submit">
+          </div>
+
+          <footer class="form-footer">
+              <div>
+                <a href="#" class="form-link">Forgot password?</a>
+              </div>
+              <div>
+                Already have an account?
+                <a href="#" class="form-link">Log in</a>
+              </div>
+          </footer>
+        </form>
+      </div>
+    </section>
+  </main>
+  {% endblock %}
+</body>
+</html>
